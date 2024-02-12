@@ -22,6 +22,9 @@ Put jlib.py in your python libs folder.
 # Contents
 
 * [About](#about)  
+  * [Install](#install)
+    * [PIP](#pip)
+    * [Manual](#manual)
 * [Contents](#contents)  
 * [jlib.description](#jlibdescription)
   * [jlib.description()](#jlibdescription-1)
