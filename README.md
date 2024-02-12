@@ -40,7 +40,7 @@ Arguments 1+: all arguments will print a string of text seperated by a line brea
 ## jlib.\_\_str\_\_()
 
 _JLIB: echo  
---jlib.echo(): echo multiple lines of text entered back into the terminal
+--jlib.echo(): echo multiple lines of text entered back into the terminal_
 
 # jlib.fsend
 ## jlib.fsend()
