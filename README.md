@@ -202,5 +202,5 @@ Saves error.log to timestamped text file.
 
 ## jlib.SaveLog.\_\_str\_\_()
 
-_JLIB: saveLog  
---jlib.saveLog(): saves an error log_
+_JLIB: SaveLog  
+--jlib.SaveLog(): saves an error log_
