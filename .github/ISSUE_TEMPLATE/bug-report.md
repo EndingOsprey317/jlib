@@ -2,8 +2,8 @@
 name: Bug Report
 about: Report a bug in the software
 title: ''
-labels: bug
-assignees: ''
+labels: BUG
+assignees: EndingOsprey317
 
 ---
 
@@ -22,4 +22,4 @@ Leave an image of the expected outcome of the bug
 **Device**  
 OS:   
 CPU:   
-Program version:  
+Program version:
