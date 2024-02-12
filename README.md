@@ -16,7 +16,7 @@ pip install JLIB
 
 ### Manual
 
-Download latest stable release.  
+Download [latest stable release](https://github.com/EndingOsprey317/jlib/releases/latest).  
 Put jlib.py in your python libs folder.
 
 **Do not download a release marked \*NP since it could be an unstable build**
