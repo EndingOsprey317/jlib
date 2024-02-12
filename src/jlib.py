@@ -1,5 +1,6 @@
 from tkinter import messagebox as mb
 import os
+import time
 
 class description:
     def __init__(self, *args):
@@ -27,8 +28,8 @@ class alert:
                     title = "ALERT!"
 
                 mb.showinfo(title, text)
-        except:
-            error.error("JLIB: jlib.alert", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.alert" + str(ex), 1, 1, 0)
         
     def __str__(self):
         return "JLIB: alert\n--jlib.alert(): send an alert message box"
@@ -54,8 +55,8 @@ class echo:
                         text = "JLIB: echo"
 
                     print(text)
-        except:
-            error.error("JLIB: jlib.echo", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.echo" + str(ex), 1, 1, 0)
             
     def __str__(self):
         return "JLIB: echo\n--jlib.echo(): echo multiple lines of text entered back into the terminal"
@@ -74,8 +75,8 @@ class fsend:
                     for x in args:
                         f.write(x + "\n")
                     f.close()
-        except:
-            error.error("JLIB: jlib.fsend", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.fsend" + str(ex), 1, 1, 0)
         
     def overwrite(file, *args):
         try:
@@ -89,8 +90,8 @@ class fsend:
                 for x in args:
                     f.write(x + "\n")
                 f.close()
-        except:
-            error.error("JLIB: jlib.fsend.overwrite", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.fsend.overwrite" + str(ex), 1, 1, 0)
     
     def delete(file, keepFile):
         try:
@@ -100,8 +101,8 @@ class fsend:
                 f.close()
             else:
                 os.remove(file)
-        except:
-            error.error("JLIB: jlib.alert.delete", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.alert.delete" + str(ex), 1, 1, 0)
     
     def __str__(self):
         return "JLIB: fsend\n--jlib.fsend(): append file\n--jlib.fsend.overwrite(): overwrite file\n--jlib.fsend.delete(): delete file"
@@ -122,8 +123,8 @@ class error:
                 fsend("error.log", "(INFO) -- " + text)
             if user == True:
                 alert(text, "INFO")
-        except:
-            error.error("JLIB: jlib.error.log", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.error.log" + str(ex), 1, 1, 0)
         
     def warn(text, terminal, log, user):
         try:
@@ -133,8 +134,8 @@ class error:
                 fsend("error.log", "(WARN) -- " + text)
             if user == True:
                 alert(text, "WARN")
-        except:
-            error.error("JLIB: jlib.error.warn", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.error.warn" + str(ex), 1, 1, 0)
     
     def error(text, terminal, log, user):
         try:
@@ -144,8 +145,8 @@ class error:
                 fsend("error.log", "(ERROR) -- " + text)
             if user == True:
                 alert(text, "ERROR")
-        except:
-            error.error("JLIB: jlib.error.error", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.error.error" + str(ex), 1, 1, 0)
     
     def fatal(text, terminal, log, user):
         try:
@@ -155,11 +156,32 @@ class error:
                 fsend("error.log", "(FATAL) -- " + text)
             if user == True:
                 alert(text, "FATAL")
-        except:
-            error.error("JLIB: jlib.error.fatal", 1, 1, 0)
+        except Exception as ex:
+            error.error("JLIB: jlib.error.fatal" + str(ex), 1, 1, 0)
     
     def __str__(self):
         return "JLIB: error\n--jlib.error.log(): send an INFO message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.warn(): send an WARN message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.error(): send an ERROR message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.fatal(): send an FATAL message to 'terminal', 'error file', and/or 'message box'"
+
+class SaveLog():
+    def __init__(self):
+        try:
+            f = open("error.log")
+            try:
+                os.mkdir(os.getcwd() + "\\error_logs\\")
+                s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
+                s.write(f.read())
+                s.close()
+            except FileExistsError:
+                s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
+                s.write(f.read())
+                s.close()
+            except Exception as ex:
+                error.error("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
+            f.close()
+        except Exception as ex:
+            error.warn("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
+    def __str__(self):
+        return "JLIB: saveLog\n--jlib.saveLog(): saves an error log"
 
 if __name__ == "__main__":
     description()
