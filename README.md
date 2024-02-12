@@ -29,3 +29,15 @@ Argument 2: this is the title of the message box
 
 _JLIB: alert  
 --jlib.alert(): send an alert message box_
+
+# jlib.echo
+## jlib.echo()
+
+This function will echo back into the terminal any text given into the arguments of the function  
+  
+Arguments: all arguments will print a string of text seperated by a line break for each argument
+
+## jlib.\_\_str\_\_()
+
+_JLIB: echo  
+--jlib.echo(): echo multiple lines of text entered back into the terminal
