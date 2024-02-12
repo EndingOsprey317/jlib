@@ -35,9 +35,32 @@ _JLIB: alert
 
 This function will echo back into the terminal any text given into the arguments of the function  
   
-Arguments: all arguments will print a string of text seperated by a line break for each argument
+Arguments 1+: all arguments will print a string of text seperated by a line break for each argument
 
 ## jlib.\_\_str\_\_()
 
 _JLIB: echo  
 --jlib.echo(): echo multiple lines of text entered back into the terminal
+
+# jlib.fsend
+## jlib.fsend()
+
+This function will append a file with any text given as arguments  
+  
+Argument 1: name of the file to be written into  
+Argument 2+: text to be written into the file, seperated by a line break
+
+## jlib.fsend.overwrite()
+
+This function will overwrite a file with any text given as arguments  
+  
+Argument 1: name of the file to be overwritten  
+Argument 2+: text to be written into the file, seperated by a line break
+
+## jlib.fsend.delete()
+
+This function will delete a file.
+The function will allow only the contents of the file to be deleted, not the file itself.  
+  
+Argument 1: name of the file to be deleted  
+Argument 2: boolean - true will keep the file but still delete the contents whereas false will delete the entire file
