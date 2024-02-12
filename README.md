@@ -60,6 +60,10 @@ Put jlib.py in your python libs folder.
 * [jlib.SaveLog](#jlibsavelog)
   * [jlib.Savelog()](#jlibsavelog-1)
   * [jlib.SaveLog.\_\_str\_\_()](#jlibsavelog__str__)
+* [jlib.FizzBuzz](#jlibfizzbuzz)
+  * [jlib.FizzBuzz()](#jlibfizzbuzz-1)
+    * [Arguments](#arguments-9)
+  * [jlib.FizzBuzz.\_\_str\_\_()](#jlibfizzbuzz__str__)
 
 # jlib.description
 
