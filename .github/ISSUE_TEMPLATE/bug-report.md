@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Report a bug in the software
-title: ''
+title: "[BUG]"
 labels: BUG
 assignees: EndingOsprey317
 

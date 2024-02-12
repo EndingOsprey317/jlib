@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Request a new feature for the software
-title: ''
+title: "[FEATURE]"
 labels: FEATURE
 assignees: EndingOsprey317
 
