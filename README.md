@@ -10,7 +10,14 @@ All functions within this module will pass all code contained within the functio
 
 ## Install
 
+### PIP
+
 pip install JLIB
+
+### Manual
+
+Download latest stable release.  
+Put jlib.py in your python libs folder.
 
 # Contents
 
