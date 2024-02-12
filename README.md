@@ -12,7 +12,7 @@ All functions within this module will pass all code contained within the functio
 
 ### PIP
 
-pip install JLIB
+pip install -i https://test.pypi.org/simple/ jlib==0.1.0
 
 ### Manual
 
