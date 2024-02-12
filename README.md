@@ -66,7 +66,9 @@ _JLIB: description
 ## jlib.alert()
 
 This function will create a message box containing the data given to the function.  
-  
+
+### Arguments
+
 Argument 1: this is the text that will be displayed within the message box  
 Argument 2: this is the title of the message box
 
@@ -80,7 +82,9 @@ _JLIB: alert
 ## jlib.echo()
 
 This function will echo back into the terminal any text given into the arguments of the function  
-  
+
+### Arguments
+
 Arguments 1+: all arguments will print a string of text seperated by a line break for each argument
 
 ## jlib.echo.\_\_str\_\_()
@@ -93,22 +97,28 @@ _JLIB: echo
 ## jlib.fsend()
 
 This function will append a file with any text given as arguments  
-  
+
+### Arguments
+
 Argument 1: name of the file to be written into  
 Argument 2+: text to be written into the file, seperated by a line break
 
 ## jlib.fsend.overwrite()
 
-This function will overwrite a file with any text given as arguments  
-  
+This function will overwrite a file with any text given as arguments
+
+### Arguments
+
 Argument 1: name of the file to be overwritten  
 Argument 2+: text to be written into the file, seperated by a line break
 
 ## jlib.fsend.delete()
 
 This function will delete a file.
-The function will allow only the contents of the file to be deleted, not the file itself.  
-  
+The function will allow only the contents of the file to be deleted, not the file itself.
+
+### Arguments
+
 Argument 1: name of the file to be deleted  
 Argument 2: boolean - true will keep the file but still delete the contents whereas false will delete the entire file
 
@@ -123,8 +133,10 @@ _JLIB: fsend
 
 ## jlib.error.log()
 
-This function will create a LOG entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
-  
+This function will create a LOG entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).
+
+### Arguments
+
 Argument 1: info to log and/or description of text  
 Argument 2: boolean - whether to display in terminal  
 Argument 3: boolean - whether to write to error file  
@@ -132,8 +144,10 @@ Argument 4: boolean - whether to display a message box to user
 
 ## jlib.error.warn()
 
-This function will create a WARN entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
-  
+This function will create a WARN entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).
+
+### Arguments
+
 Argument 1: warning to log and/or description of error  
 Argument 2: boolean - whether to display in terminal  
 Argument 3: boolean - whether to write to error file  
@@ -141,8 +155,10 @@ Argument 4: boolean - whether to display a message box to user
 
 ## jlib.error.error()
 
-This function will create an ERROR entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
-  
+This function will create an ERROR entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).
+
+### Arguments
+
 Argument 1: error to log and/or description of error  
 Argument 2: boolean - whether to display in terminal  
 Argument 3: boolean - whether to write to error file  
@@ -150,8 +166,10 @@ Argument 4: boolean - whether to display a message box to user
 
 ## jlib.error.fatal()
 
-This function will create a FATAL entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
-  
+This function will create a FATAL entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).
+
+### Arguments
+
 Argument 1: fatality to log and/or description of error  
 Argument 2: boolean - whether to display in terminal  
 Argument 3: boolean - whether to write to error file  
