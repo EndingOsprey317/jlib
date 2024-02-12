@@ -1,0 +1,20 @@
+[project]
+name = "JLIB"
+version = "0.0.3"
+authors = [
+    {name = "EndingOsprey317"}
+]
+description = "JLIB module for python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Natural Language :: English",
+    "Operating System :: Microsoft",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Homepage = "https://github.com/EndingOsprey317/jlib"
+Documentation = "https://github.com/EndingOsprey317/jlib/wiki"
+Repository = "https://github.com/EndingOsprey317/jlib/releases/latest"
