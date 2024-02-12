@@ -6,9 +6,9 @@ class description:
     def __init__(self, *args):
         try:
             if args[0] != "!pass":
-                echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"), SaveLog("!pass"))
+                echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"), SaveLog("!pass"), FizzBuzz("!pass"))
         except:
-            echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"), SaveLog("!pass"))
+            description("")
         
     def __str__(self):
         return "JLIB: description\n--jlib.description(): display a help description of all classes in the JLIB module"
@@ -186,7 +186,28 @@ class SaveLog:
             error.error("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
 
     def __str__(self):
-        return "JLIB: saveLog\n--jlib.saveLog(): saves an error log"
+        return "JLIB: SaveLog\n--jlib.SaveLog(): saves an error log"
+    
+class FizzBuzz:
+    def __init__(self, numbers):
+        try:
+            if numbers != "!pass":
+                i = 0
+                while i < numbers:
+                    i += 1
+                    if i % 3 == 0 and i % 4 == 0:
+                        echo("FizzBuzz")
+                    elif i % 3 == 0:
+                        echo("Fizz")
+                    elif i % 4 == 0:
+                        echo("Buzz")
+                    else:
+                        echo(i)
+        except Exception as ex:
+            error.error("JLIB: jlib.FizzBuzz -- " + str(ex), 1, 1, 0)
+    
+    def __str__(self):
+        return "JLIB: FizzBuzz\n--jlib.FizzBuzz(): play fizzbuzz"
 
 if __name__ == "__main__":
     description()
