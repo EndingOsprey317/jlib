@@ -2,7 +2,7 @@
 name: Bug Report
 about: Report a bug in the software
 title: "[BUG]"
-labels: BUG
+labels: BUG, spam
 assignees: EndingOsprey317
 
 ---

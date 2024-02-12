@@ -2,7 +2,7 @@
 name: Feature Request
 about: Request a new feature for the software
 title: "[FEATURE]"
-labels: FEATURE
+labels: FEATURE, spam
 assignees: EndingOsprey317
 
 ---
