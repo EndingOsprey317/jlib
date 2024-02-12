@@ -14,4 +14,4 @@ What would you like to see as part of the software?
 Explain why you would like this feature as part of the software  
   
 **Basic starting code**  
-If you are abe to code a low-level working feature leave a screenshot of the code here  
+If you are abe to code a low-level working updtae, leave a screenshot of the code here  
