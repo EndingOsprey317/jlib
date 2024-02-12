@@ -71,3 +71,48 @@ _JLIB: fsend
 --jlib.fsend(): append file  
 --jlib.fsend.overwrite(): overwrite file  
 --jlib.fsend.delete(): delete file_
+
+# jlib.error
+## jlib.error.log()
+
+This function will create a LOG entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
+  
+Argument 1: info to log and/or description of text  
+Argument 2: boolean - whether to display in terminal  
+Argument 3: boolean - whether to write to error file  
+Argument 4: boolean - whether to display a message box to user
+
+## jlib.error.warn()
+
+This function will create a WARN entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
+  
+Argument 1: warning to log and/or description of error  
+Argument 2: boolean - whether to display in terminal  
+Argument 3: boolean - whether to write to error file  
+Argument 4: boolean - whether to display a message box to user
+
+## jlib.error.error()
+
+This function will create an ERROR entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
+  
+Argument 1: error to log and/or description of error  
+Argument 2: boolean - whether to display in terminal  
+Argument 3: boolean - whether to write to error file  
+Argument 4: boolean - whether to display a message box to user
+
+## jlib.error.fatal()
+
+This function will create a FATAL entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
+  
+Argument 1: fatality to log and/or description of error  
+Argument 2: boolean - whether to display in terminal  
+Argument 3: boolean - whether to write to error file  
+Argument 4: boolean - whether to display a message box to user
+
+## jlib.error.\_\_str\_\_()
+
+_JLIB: error  
+--jlib.error.log(): send an INFO message to 'terminal', 'error file', and/or 'message box'  
+--jlib.error.warn(): send an WARN message to 'terminal', 'error file', and/or 'message box'  
+--jlib.error.error(): send an ERROR message to 'terminal', 'error file', and/or 'message box'  
+--jlib.error.fatal(): send an FATAL message to 'terminal', 'error file', and/or 'message box'_
