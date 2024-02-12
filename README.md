@@ -204,3 +204,21 @@ Saves error.log to timestamped text file.
 
 _JLIB: SaveLog  
 --jlib.SaveLog(): saves an error log_
+
+# jlib.FizzBuzz
+
+## jlib.FizzBuzz()
+
+Lists out FizzBuzz numbers.
+Multiples of 3 are replaced by fizz.
+Multiples of 4 are replaced by buzz.
+Multiples of both 3 and 4 are replaced with fizzbuzz.
+
+### Arguments
+
+Argument 1: how many fizzbuzz numbers to list
+
+## jlib.FizzBuzz.\_\_str\_\_()
+
+_JLIB: FizzBuzz  
+--jlib.FizzBuzz(): play fizzbuzz_
