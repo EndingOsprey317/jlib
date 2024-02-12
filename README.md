@@ -1,4 +1,5 @@
 # JLIB
+
 # About
 
 This is the **JLIB** project.
@@ -12,27 +13,31 @@ All functions within this module will pass all code contained within the functio
 * [About](#about)  
 * [Contents](#contents)  
 * [jlib.description](#jlibdescription)
-  - [jlib.description()](#jlibdescription-1)
-  - [jlib.decription.\_\_str\_\_()](#jlibdescription__str__)
+  * [jlib.description()](#jlibdescription-1)
+  * [jlib.decription.\_\_str\_\_()](#jlibdescription__str__)
 * [jlib.alert](#jlibalert)
-  - [jlib.alert()](#jlibalert-1)
-  - [jlib.alert.\_\_str\_\_()](#jlibalert__str__)
+  * [jlib.alert()](#jlibalert-1)
+  * [jlib.alert.\_\_str\_\_()](#jlibalert__str__)
 * [jlib.echo](#jlibecho)
-  - [jlib.echo()](#jlibecho-1)
-  - [jlib.echo.\_\_str\_\_()](#jlibecho__str__)
+  * [jlib.echo()](#jlibecho-1)
+  * [jlib.echo.\_\_str\_\_()](#jlibecho__str__)
 * [jlib.fsend](#jlibfsend)
-  - [jlib.fsend()](#jlibfsend-1)
-  - [jlib.fsend.overwrite()](#jlibfsendoverwrite)
-  - [jlib.fsend.delete()](#jlibfsenddelete)
-  - [jlib.fsend.\_\_str\_\_()](#jlibfsend__str__)
+  * [jlib.fsend()](#jlibfsend-1)
+  * [jlib.fsend.overwrite()](#jlibfsendoverwrite)
+  * [jlib.fsend.delete()](#jlibfsenddelete)
+  * [jlib.fsend.\_\_str\_\_()](#jlibfsend__str__)
 * [jlib.error](#jliberror)
-  - [jlib.error.log()](#jliberrorlog)
-  - [jlib.error.warn()](#jliberrorwarn)
-  - [jlib.error.error()](#jliberrorerror)
-  - [jlib.error.fatal()](#jliberrorfatal)
-  - [jlib.error.\_\_str\_\_()](#jliberror__str__)
+  * [jlib.error.log()](#jliberrorlog)
+  * [jlib.error.warn()](#jliberrorwarn)
+  * [jlib.error.error()](#jliberrorerror)
+  * [jlib.error.fatal()](#jliberrorfatal)
+  * [jlib.error.\_\_str\_\_()](#jliberror__str__)
+* [jlib.SaveLog](#jlibsavelog)
+  * [jlib.Savelog()](#jlibsavelog-1)
+  * [jlib.SaveLog.\_\_str\_\_()](#jlibsavelog__str__)
 
 # jlib.description
+
 ## jlib.description()
 
 This function writes out a list of all functions into the terminal.
@@ -43,6 +48,7 @@ _JLIB: description
 --jlib.description(): display a help description of all classes in the JLIB module_
 
 # jlib.alert
+
 ## jlib.alert()
 
 This function will create a message box containing the data given to the function.  
@@ -56,6 +62,7 @@ _JLIB: alert
 --jlib.alert(): send an alert message box_
 
 # jlib.echo
+
 ## jlib.echo()
 
 This function will echo back into the terminal any text given into the arguments of the function  
@@ -68,6 +75,7 @@ _JLIB: echo
 --jlib.echo(): echo multiple lines of text entered back into the terminal_
 
 # jlib.fsend
+
 ## jlib.fsend()
 
 This function will append a file with any text given as arguments  
@@ -98,6 +106,7 @@ _JLIB: fsend
 --jlib.fsend.delete(): delete file_
 
 # jlib.error
+
 ## jlib.error.log()
 
 This function will create a LOG entry in 'terminal' (argument 2), 'the error.log file' (argument 3), and/or 'a user displayed message box' (argument 4).  
@@ -141,3 +150,14 @@ _JLIB: error
 --jlib.error.warn(): send an WARN message to 'terminal', 'error file', and/or 'message box'  
 --jlib.error.error(): send an ERROR message to 'terminal', 'error file', and/or 'message box'  
 --jlib.error.fatal(): send an FATAL message to 'terminal', 'error file', and/or 'message box'_
+
+# jlib.SaveLog
+
+## jlib.SaveLog()
+
+Saves error.log to timestamped text file.
+
+## jlib.SaveLog.\_\_str\_\_()
+
+_JLIB: saveLog  
+--jlib.saveLog(): saves an error log_
