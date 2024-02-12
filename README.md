@@ -64,3 +64,10 @@ The function will allow only the contents of the file to be deleted, not the fil
   
 Argument 1: name of the file to be deleted  
 Argument 2: boolean - true will keep the file but still delete the contents whereas false will delete the entire file
+
+## jlib.fsend.\_\_str\_\_()
+
+_JLIB: fsend  
+--jlib.fsend(): append file  
+--jlib.fsend.overwrite(): overwrite file  
+--jlib.fsend.delete(): delete file_
