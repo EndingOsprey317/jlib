@@ -6,9 +6,9 @@ class description:
     def __init__(self, *args):
         try:
             if args[0] != "!pass":
-                echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"))
+                echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"), SaveLog("!pass"))
         except:
-            echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"))
+            echo("JLIB", "------------", description("!pass"), alert("!pass"), echo("!pass"), fsend("!pass"), error("!pass"), SaveLog("!pass"))
         
     def __str__(self):
         return "JLIB: description\n--jlib.description(): display a help description of all classes in the JLIB module"
@@ -162,24 +162,29 @@ class error:
     def __str__(self):
         return "JLIB: error\n--jlib.error.log(): send an INFO message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.warn(): send an WARN message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.error(): send an ERROR message to 'terminal', 'error file', and/or 'message box'\n--jlib.error.fatal(): send an FATAL message to 'terminal', 'error file', and/or 'message box'"
 
-class SaveLog():
-    def __init__(self):
+class SaveLog:
+    def __init__(self, *args):
         try:
-            f = open("error.log")
-            try:
-                os.mkdir(os.getcwd() + "\\error_logs\\")
-                s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
-                s.write(f.read())
-                s.close()
-            except FileExistsError:
-                s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
-                s.write(f.read())
-                s.close()
-            except Exception as ex:
-                error.error("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
-            f.close()
+            if args[0] != "!pass":
+                try:
+                    f = open("error.log")
+                    try:
+                        os.mkdir(os.getcwd() + "\\error_logs\\")
+                        s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
+                        s.write(f.read())
+                        s.close()
+                    except FileExistsError:
+                        s = open(os.getcwd() + "\\error_logs\\" + str(int(time.time())) + ".log", "w")
+                        s.write(f.read())
+                        s.close()
+                    except Exception as ex:
+                        error.error("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
+                    f.close()
+                except Exception as ex:
+                    error.warn("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
         except Exception as ex:
-            error.warn("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
+            error.error("JLIB: jlib.SaveLog -- " + str(ex), 1, 1, 0)
+
     def __str__(self):
         return "JLIB: saveLog\n--jlib.saveLog(): saves an error log"
 
