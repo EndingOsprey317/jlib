@@ -4,8 +4,33 @@
 This is the **JLIB** project.
 It is a key module for python.
 It contains many ease-of-use features that I believe are commonly used when writing python files.
-The **JLIB** module file can also be run by itself, displaying a description of the classes contained within the **JLIB** module from [jlib.description()](https://github.com/EndingOsprey317/jlib#jlibdescription-1).
+The **JLIB** module file can also be run by itself, displaying a description of the classes contained within the **JLIB** module from [jlib.description()](#jlibdescription-1).
 All functions within this project, if you write "!pass" as its first argument, will pass all code contained within the function.
+
+# Contents
+
+* [About](#about)  
+* [Contents](#contents)  
+* [jlib.description](#jlibdescription)
+  - [jlib.description()](#jlibdescription-1)
+  - [jlib.decription.\_\_str\_\_()](#jlibdescription__str__)
+* [jlib.alert](#jlibalert)
+  - [jlib.alert()](#jlibalert-1)
+  - [jlib.alert.\_\_str\_\_()](#jlibalert__str__)
+* [jlib.echo](#jlibecho)
+  - [jlib.echo()](#jlibecho-1)
+  - [jlib.echo.\_\_str\_\_()](#jlibecho__str__)
+* [jlib.fsend](#jlibfsend)
+  - [jlib.fsend()](#jlibfsend-1)
+  - [jlib.fsend.overwrite()](#jlibfsendoverwrite)
+  - [jlib.fsend.delete()](#jlibfsenddelete)
+  - [jlib.fsend.\_\_str\_\_()](#jlibfsend__str__)
+* [jlib.error](#jliberror)
+  - [jlib.error.log()](#jliberrorlog)
+  - [jlib.error.warn()](#jliberrorwarn)
+  - [jlib.error.error()](#jliberrorerror)
+  - [jlib.error.fatal()](#jliberrorfatal)
+  - [jlib.error.\_\_str\_\_()](#jliberror__str__)
 
 # jlib.description
 ## jlib.description()
@@ -37,7 +62,7 @@ This function will echo back into the terminal any text given into the arguments
   
 Arguments 1+: all arguments will print a string of text seperated by a line break for each argument
 
-## jlib.\_\_str\_\_()
+## jlib.echo.\_\_str\_\_()
 
 _JLIB: echo  
 --jlib.echo(): echo multiple lines of text entered back into the terminal_
