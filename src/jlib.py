@@ -58,7 +58,7 @@ class echo:
             error.error("JLIB: jlib.echo", 1, 1, 0)
             
     def __str__(self):
-        return "JLIB: echo\n--jlib.echo(): echo multiple lines of text entred back into the terminal"
+        return "JLIB: echo\n--jlib.echo(): echo multiple lines of text entered back into the terminal"
     
 class fsend:
     def __init__(self, file, *args):
